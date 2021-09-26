@@ -1,0 +1,80 @@
+body {
+	font-family: 'Open Sans', sans-serif !important;
+	background: #fff;
+	font-weight: normal;
+	scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+li, ol, p, ul {
+	font-weight: normal;
+}
+a,a:hover,a:focus,.btn,.btn:hover,.btn:focus,input:focus,input:visited,textarea:focus,textarea:visited,
+button:focus,button:hover,button:visited{
+	outline: none;
+	text-decoration: none;
+	box-shadow: none !important;
+}
+button, button:hover,button:focus{
+	outline: none;
+	box-shadow: none;
+}
+img{
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+.wrapper-area {
+	padding: 50px 0;
+}
+.title {
+	text-align: center;
+	padding-bottom: 40px;
+}
+.title h2 {
+	color: #fff;
+	font-size: 32px;
+	margin: 0;
+}
+.how-item i{
+	color: #ffffff;
+	font-size: 90px;
+	margin: 15px 0;
+}
+.features i{
+	color: #e73138;
+	margin-right: 10px;
+}
+.banner-content li i {
+	position: relative;
+	color: #ffffff;
+	font-size: 24px;
+	top: 4px;
+	line-height: 0;
+}
+.quote-area label {
+	font-size: 15px;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.quote-area .form-control {
+	border-radius: 5px;
+	padding: 8px 15px;
+	border: 1px solid #eaeaea;
+	height: auto;
+	color: #323232;
+	font-size: 14px;
+}
+.quote-area .form-control:focus {
+	border-color: #ec1f27;
+}
+.quote-area input[type='submit'], .quote-area input[type='submit']:focus, .quote-area input[type='submit']:hover {
+	color: #fff;
+	min-width: 150px;
+	font-weight: bold;
+	background: #ec1f27;
+	border-color: #ec1f27;
+}
+
