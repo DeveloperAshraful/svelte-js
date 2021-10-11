@@ -19,6 +19,7 @@
         submitted = true;
     }
 
+
 </script>
 <div class="quote-area">
   <h3>Get a free Quote</h3>
