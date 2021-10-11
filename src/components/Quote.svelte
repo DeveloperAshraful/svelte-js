@@ -1,11 +1,37 @@
 <script>
     import {Form, FormGroup, FormText, Input, Label} from 'sveltestrap';
-
     let radioGroup;
+
+    let hasError = false;
+    let isSuccessVisible = false;
+    let submitted = false;
+
+    const errMessage = "All the fields are mandatory";
+
+    function handleSubmit() {
+        isSuccessVisible = true;
+        setTimeout(function(){
+            isSuccessVisible = false;
+        }, 4000);
+        console.log('submit button');
+    }
+    function submitBtn() {
+        submitted = true;
+    }
+
 </script>
 <div class="quote-area">
   <h3>Get a free Quote</h3>
-  <Form>
+
+  {#if hasError === true}
+    <p class="error-alert">{errMessage}</p>
+  {:else}
+    {#if isSuccessVisible}
+      <p class="error-alert">Data updated successfully</p>
+    {/if}
+  {/if}
+
+  <form on:submit|preventDefault={handleSubmit}>
     <div class="row">
       <div class="col-md-6">
         <FormGroup>
@@ -39,11 +65,13 @@
       </div>
       <div class="col-md-6">
         <FormGroup>
-          <Input type="submit" name="submit" value="Send"/>
+            <Input type="submit" on:click={submitBtn} name="submit" value="Send"/>
         </FormGroup>
       </div>
     </div>
-  </Form>
+  </form>
+
+
 </div>
 <style>
   .quote-area {
@@ -62,7 +90,6 @@
     margin-bottom: 15px;
     display: inline-block;
   }
-
 
   /*============ Start Responsive ==============*/
 

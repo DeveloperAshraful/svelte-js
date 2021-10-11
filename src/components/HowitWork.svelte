@@ -52,6 +52,7 @@
   .how-item h3 {
     font-size: 25px;
     color: #ffffff;
+    font-weight: bold;
     margin: 0;
   }
   .how-item p {

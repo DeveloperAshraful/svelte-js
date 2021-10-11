@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </svelte:head>
 <script>
-    // import {Router, Route, Link} from 'svelte-navigator'
     import Header from "./components/Header.svelte";
     import Footer from "./components/Footer.svelte";
     import HowitWork from "./components/HowitWork.svelte";
@@ -20,22 +19,6 @@
 </script>
 <div class="wrapper">
   <Header/>
-<!--  <Router>-->
-<!--    <nav>-->
-<!--      <Link to="/">Home</Link>-->
-<!--      <Link to="about">About</Link>-->
-<!--    </nav>-->
-<!--    <main>-->
-<!--      <Route path="/">-->
-<!--        <h3>Home</h3>-->
-<!--        <p>Home sweet home...</p>-->
-<!--      </Route>-->
-<!--      <Route path="about">-->
-<!--        <h3>About</h3>-->
-<!--        <p>That's what it's all about!</p>-->
-<!--      </Route>-->
-<!--    </main>-->
-<!--  </Router>-->
   <Banner/>
   <Featured/>
   <HowitWork/>
